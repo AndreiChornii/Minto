@@ -11,7 +11,7 @@ body, ul{
 body{
     border-top: 8px solid #a292b3;
     border-bottom: 8px solid #a292b3;
-    height: 1000px;
+    height: 1500px;
 }
 
 li{
@@ -163,9 +163,47 @@ header{
     padding: 20px 35px;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 30px;
     width: 98%;
 }
 
 #container > p span{
     color: #83699d;
 }
+
+#banners_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+#banners_bottom #bn-left{
+    width:34%;
+    border: 1px solid black;
+}
+
+#banners_bottom #bn-right{
+    width:66%;
+    border: 1px solid black;
+}
+
+#banners_bottom #bn-left #wrap {
+    margin-right: 15px;
+    border: 1px solid black;
+    position: relative;
+    height: 370px;
+}
+
+#banners_bottom #bn-left #wrap .round_white{
+    position: absolute;
+    max-width: 100%;
+}
+
+#banners_bottom #bn-left #wrap .round{
+    max-width: 85%;
+    position: absolute;
+    width: 100%;
+    left: 12px;
+    top: 12px;
+}
+
