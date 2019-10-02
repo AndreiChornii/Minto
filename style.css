@@ -10,6 +10,8 @@ body, ul{
 
 body{
     border-top: 8px solid #a292b3;
+    border-bottom: 8px solid #a292b3;
+    height: 1000px;
 }
 
 li{
@@ -106,13 +108,13 @@ header{
 
 #banner img{
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #banner #navigation{
     position: absolute;
     top: 40%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 20%;
     display: flex;
@@ -120,12 +122,50 @@ header{
     align-items: center;
 }
 
-#banner #navigation .fa{
+#banner #navigation .btn{
     color: #fff;
     background-color: #83699d;
-    width: 20px;
-    height: 40px;
-    /* vertical-align: middle; */
-    /* text-align: center; */
-    /* margin: auto; */
+    padding: 10px 3px;
+    font-size: 22px;
+    cursor: pointer;
+    border: none;
+}
+
+#banner #navigation .btn:hover{
+    background-color: #59466d;
+}
+
+#banner #navigation #MintoText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#banner #navigation #MintoText span{
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner #navigation #MintoText #minto{
+    font-size: 90px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: #000 -2px 3px;
+}
+
+#container > p {
+    text-align: center;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 8vh;
+    font-weight: 500;
+    padding: 20px 35px;
+    margin: auto;
+    margin-top: 40px;
+    width: 98%;
+}
+
+#container > p span{
+    color: #83699d;
 }
