@@ -210,9 +210,10 @@ header{
 #banners_bottom #bn-right #wrap {
     margin-left: 10px;
     border: 1px solid black;
-    /* height: 370px; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 370px;
 }
 
 #banners_bottom #bn-right #wrap h1 {
@@ -222,4 +223,30 @@ header{
 
 #banners_bottom #bn-right #wrap p {
     margin-right: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#banners_bottom #bn-right #wrap #read{
+    margin-top: 0;
+    font-style: italic;
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+}
+
+#banners_bottom #bn-right #wrap #read span, 
+#banners_bottom #bn-right #wrap #read button{
+    float:right;
+}
+
+#banners_bottom #bn-right #wrap #read button{
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+}
+
+#banners_bottom #bn-right #wrap #read button i{
+    vertical-align: text-top;
+    font-weight: bold;
 }
