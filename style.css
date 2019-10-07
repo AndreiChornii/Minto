@@ -357,6 +357,10 @@ footer .wrap{
         font-size: 20px;
     }
 
+    #banner #navigation #MintoText #minto{
+        font-size: 12vh;
+    }
+
     #banners_bottom #bn-left{
         width: 66%;
         margin: auto;
@@ -386,6 +390,10 @@ footer .wrap{
 
     #banner #navigation #MintoText span{
         font-size: 20px;
+    }
+
+    #banner #navigation #MintoText #minto{
+        font-size: 8vh;
     }
 
     #banners_bottom #bn-left{
