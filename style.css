@@ -3,6 +3,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'andesitalicw04-regularregular';
+    src: url('webfontkit-20191007-070737/andes_italic_w04_regular-webfont.woff2') format('woff2'),
+         url('webfontkit-20191007-070737/andes_italic_w04_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body, ul{
     margin: 0;
     padding: 0;
@@ -64,7 +73,7 @@ header{
     text-transform: uppercase;
     color: #a292b3;
     margin-left: -95px;
-}
+    }
 
 #logo::before{
     content: url(img/Group-4.png);
@@ -85,6 +94,10 @@ header{
     color: #818181;
     margin: 5px;
     height: 55px;
+}
+
+#header-menu ul li a::before{
+    padding-right: 7px;
 }
 
 #header-menu ul li#home a::before{
@@ -152,18 +165,18 @@ header{
 }
 
 #banner #navigation #MintoText #minto{
-    font-size: 90px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16vh;
+    font-family:andesitalicw04-regularregular;
     text-shadow: #000 -2px 3px;
 }
 
-#container > p {
+#container #present_text {
     text-align: center;
     border-top: 1px solid #bfbfbf;
     border-bottom: 1px solid #bfbfbf;
     font-style: italic;
     font-size: 20px;
-    line-height: 8vh;
+    line-height: 4vh;
     font-weight: 500;
     padding: 20px 35px;
     margin: auto;
@@ -172,7 +185,7 @@ header{
     width: 98%;
 }
 
-#container > p span{
+#container #present_text span{
     color: #83699d;
 }
 
@@ -331,6 +344,27 @@ footer .wrap{
     #where{
         margin-top: 200px;
     } 
+
+    #container #present_text {
+        line-height: 30px;
+    }
+
+    #banners_bottom{
+        flex-direction:column;
+    }
+
+    #banner #navigation #MintoText span{
+        font-size: 20px;
+    }
+
+    #banners_bottom #bn-left{
+        width: 66%;
+        margin: auto;
+    }
+
+    #banners_bottom #bn-right {
+        width: 100%;
+    }
 }
 
 @media(max-width: 400px) {
@@ -340,5 +374,26 @@ footer .wrap{
 
     #where{
         margin-top: 400px;
+    }
+
+    #container #present_text {
+        line-height: 30px;
+    }
+
+    #banners_bottom{
+        flex-direction:column;
+    }
+
+    #banner #navigation #MintoText span{
+        font-size: 20px;
+    }
+
+    #banners_bottom #bn-left{
+        width: 66%;
+        margin: auto;
+    }
+
+    #banners_bottom #bn-right {
+        width: 100%;
     }
 }
